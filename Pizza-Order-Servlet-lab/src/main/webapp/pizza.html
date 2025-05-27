@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>YummyPizza.com</title>
+
+ <style>
+    body {
+      background: #fff8f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      padding: 20px;
+      margin: auto;
+    }
+
+    h3 {
+      color: #e63946;
+      font-size: 28px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    form {
+      background: #ffe5b4;
+      padding: 20px;
+      border-radius: 15px;
+      width: 400px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    label {
+      font-weight: bold;
+      color: #264653;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 12px 0;
+      border: 2px solid #e76f51;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    select {
+      background-color: #fffaf0;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      margin-right: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #f4a261;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e76f51;
+    }
+
+    br {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+	<h3>Yummy Pizza Cafe <img alt="" src="https://www.akcrust.com/hs-fs/hubfs/Neapolitan%20pizza.jpg?width=1067&height=800&name=Neapolitan%20pizza.jpg" width="40" height="25"></h3>
+	<form action="display" method="post">
+	<label for="pname" >Pizza Name:</label><br>
+	<input type="text" name="pname"><br>
+	
+	<label for="pname" >Select the Crust:</label><br>
+	<select name="crust">
+		<option value="York Style Crust">York Style Crust</option>
+		<option value="Brooklyn Style Crust">Brooklyn Style Crust</option>
+		<option value="California Style Crust">California Style Crust</option>
+		<option value="Boardwalk Style Crust">Boardwalk Style Crust</option>
+		
+	</select><br>
+	<label for="tname" >Toppings</label><br>
+	<input type="checkbox" value="Peas" name="topping">Peas<br>
+	<input type="checkbox" value="Paneer" name="topping">Paneer<br>
+	<input type="checkbox" value="Red Peppers"name="topping">Red Peppers<br>
+	<input type="checkbox" value="Pineapple" name="topping">Pineapple<br>
+	<input type="checkbox" value="Onion" name="topping">Onion<br>
+	<input type="checkbox" value="Tomato" name="topping">Tomato<br>
+	
+	<label for="aname" >Select 1 FREE Appetizer:</label><br>
+	<input type="radio" value="Garlic Bread" name="appetizer">Garlic Bread
+	<input type="radio" value="Cheese Garlic Bread" name="appetizer">Cheese Garlic Bread
+	<input type="radio" value="Veg Soup" name="appetizer">Veg Soup
+	<input type="radio" value="Ved Sandwich" name="appetizer">Ved Sandwich<br>
+	
+	
+	<label for="tname" >Address:</label><br>
+	<textarea rows="6" cols="30" name="address"></textarea><br>
+	
+	<label for="cname" >Credit Card:</label><br>
+	<input type="radio" value="Visa" name="card">Visa
+	<input type="radio" value="Master Card" name="card">Master Card
+	<input type="radio" value="American Express" name="card">American Express<br>
+	
+	<label for="pname" >Credit Card Number:</label>
+	<input type="text" name="cc">
+	<label for="pname" >Repeat Credit Card Number:</label>
+	<input type="text" name="cv"><br>
+	<input type="Submit" name="submit">
+	
+	</form>
+	
+</body>
+</html>
