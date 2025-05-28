@@ -7,22 +7,17 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletRequest;
 import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
 
 @WebServlet("/dis")
-public class EmployeeResume extends GenericServlet
+public class EmployeeResume extends HttpServlet
 {
 
-	public void doPost(ServletRequest res, ServletResponse req) throws ServletException, IOException
-	{
-		
-		
-	}
-
-	@Override
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException 
+	public void doPost(ServletRequest req, ServletResponse res) throws ServletException, IOException
 	{
 		
 		req.getRequestDispatcher("display.jsp").forward(req, res);
 	}
+
 	
 }
